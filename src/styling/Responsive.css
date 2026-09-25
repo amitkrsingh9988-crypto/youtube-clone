@@ -1,0 +1,216 @@
+/* 
+   SIDEBAR — FOR TABLET
+*/
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 72px;
+    padding: 8px 4px;
+  }
+  .sidebar-item {
+    height: 72px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 5px;
+    font-size: 11px;
+  }
+  .sidebar-item span {
+    display: block;
+  }
+  .sidebar-heading,
+  .sidebar-divider {
+    display: none;
+  }
+}
+/* SIDEBAR — MOBILE */
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+}
+/* VIDEO GRID — TABLET */
+
+@media (max-width: 1200px) {
+  .video-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+/* VIDEO GRID — SMALL TABLET */
+@media (max-width: 900px) {
+  .content {
+    padding: 0 16px 30px;
+  }
+  .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 14px;
+  }
+}
+/* VIDEO GRID — MOBILE*/
+@media (max-width: 600px) {
+  .content {
+    padding: 0 12px 85px;
+  }
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .thumbnail {
+    border-radius: 8px;
+  }
+  .video-details h3 {
+    font-size: 15px;
+  }
+}
+/* NAVBAR — TABLET */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 12px;
+  }
+  .navbar-left {
+    min-width: auto;
+  }
+  .navbar-right {
+    min-width: auto;
+  }
+  .navbar-center {
+    width: 50%;
+  }
+  .create-button span {
+    display: none;
+  }
+}
+/* NAVBAR — MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    height: 56px;
+  }
+  .navbar-left {
+    gap: 5px;
+  }
+  .youtube-logo {
+    font-size: 17px;
+  }
+  .youtube-icon {
+    width: 27px;
+    height: 19px;
+  }
+  .navbar-center {
+    width: auto;
+    flex: 1;
+    justify-content: flex-end;
+    margin-left: 10px;
+  }
+  .search-box {
+    border: none;
+    width: 42px;
+    flex: none;
+  }
+  .search-box input {
+    display: none;
+  }
+  .search-button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: transparent;
+  }
+  .mic-button {
+    display: none;
+  }
+  .create-button {
+    display: none;
+  }
+  .navbar-right {
+    gap: 2px;
+  }
+}
+/* NAVBAR FOR SMALL MOBILE */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 8px;
+  }
+  .icon-button {
+    width: 36px;
+    height: 36px;
+  }
+  .youtube-logo span:last-child {
+    display: none;
+  }
+  .profile-button {
+    width: 34px;
+    height: 34px;
+  }
+}
+/* CATEGORY BAR — MOBILE*/
+@media (max-width: 768px) {
+  .category-bar {
+    gap: 8px;
+    padding: 10px 0 16px;
+  }
+  .category-bar button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+/* CATEGORY BAR — SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .category-bar {
+    gap: 7px;
+  }
+  .category-bar button {
+    padding: 7px 11px;
+    border-radius: 7px;
+    font-size: 12px;
+  }
+}
+/* MOBILE BOTTOM NAVIGATION*/
+.mobile-nav {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 200;
+  }
+  .mobile-nav-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 10px;
+    color: #0f0f0f;
+    min-width: 55px;
+  }
+  .mobile-nav-item.active {
+    font-weight: 600;
+  }
+  .mobile-create {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #d0d0d0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+}
